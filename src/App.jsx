@@ -1,16 +1,16 @@
 import Header from './header/header_buttons.jsx'
-import s from './header/header_buttons.module.css'
+import MainSection from './main_section/MainSection.jsx'
 
 function App() {
   
 
   return (
     <>
-      <div className={s.balance}>
-          <h1 className={s.h}>balance</h1>
+      <div className='main'>
+          <h1>balance</h1>
           <Header />
+          <MainSection />
       </div>
-        
     </>
   )
 }
