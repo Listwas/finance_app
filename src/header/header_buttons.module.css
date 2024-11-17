@@ -1,37 +1,42 @@
-.balance {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    font-size: 0.8rem;
-    min-width: 100%;
-}
-
 .header_buttons {
     display: flex;
     justify-content: start;
     align-items: start;
-    width: 30%;
-    padding: 6px 8px;
-    border: 1px solid rgb(221, 221, 221);
+    width: 300px;
+    padding: 6px 2px;
+    border: var(--border);
     border-radius: 8px;
 }
 
-.header_buttons button {
+.header_buttons label {
     width: 100px;
-    height: 35px;
-    padding: 8px;
+    height: 20px;
+    padding: 4px;
     border: none;
+    cursor: pointer;
+    text-align: center;
     background-color: white;    
 }
 
-.header_buttons .set_sep {
-    border-left: 1px solid rgb(150, 150, 150);
-    border-right: 1px solid rgb(150, 150, 150);
-    height: 20px;
-    margin-top: 8px;
+.header_buttons label input {
+    display: none;
 }
 
-.header_buttons .set_sep p {
-    margin-top: -6px;
+.header_buttons .set_sep {
+    border-left: var(--border);
+    border-right: var(--border);
+    height: 20px;
 }
+
+.radio_input:checked + span {
+    background-color: var(--c-gray-200);
+    padding: 5px 15px;
+    border-radius: 12px;
+    transition-timing-function: ease-in-out;
+    margin: 0;
+    transition: padding 0.15s;
+}
+
+
+/* TODO: 
+    -add left to right transition */

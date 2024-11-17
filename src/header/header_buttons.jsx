@@ -4,9 +4,18 @@ function Header() {
     return (
         <>
             <div className={s.header_buttons}>
-                <button >expences</button>
-                <button className={s.set_sep}><p>summary</p></button>
-                <button>income</button>
+                <label>
+                    <input type="radio" name="options" className={s.radio_input} />
+                    <span>expences</span>
+                </label>
+                <label className={s.set_sep}>
+                    <input type="radio" name="options" className={s.radio_input} />
+                    <span>summary</span>
+                </label>                
+                <label>
+                    <input type="radio" name="options" className={s.radio_input} />
+                    <span>income</span>
+                </label>
             </div>  
         </>
     )
