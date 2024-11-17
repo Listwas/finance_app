@@ -1,0 +1,40 @@
+.main_cont {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 16px;
+    width: 60vw;
+    height: 500px;
+    border: var(--border);
+    border-radius: 12px;
+    padding: 0px 6px;
+}
+
+.radio_label {
+    background-color: var(--c-gray-200);
+    border: none;
+    width: 100%;
+    margin: 4px;
+    padding: 3px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio_input {
+    display: none;
+}
+
+.radio_input:checked + span {
+    transition-timing-function: ease-in-out;
+    margin: 0;
+    padding: 1px 100px;
+    border-radius: 12px;
+    transition: padding 0.3s;
+}
+
+.radio_input + span {
+    transition: padding 0.2s;
+}
