@@ -2,6 +2,21 @@
   font-family: "Scope One", serif;
 }
 
+:root {
+  --border: 1px solid rgb(221, 221, 221);
+  
+  --c-gray-100: #F2F2F2;
+  --c-gray-200: #EBEBEB;
+  --c-gray-300: #E6E6E6;
+  --c-gray-400: #DFDFDF;
+  --c-gray-500: #C9C9C9;
+  --c-gray-600: #A8A8A8;
+  --c-gray-700: #8F8F8F;
+  --c-gray-800: #7D7D7D;
+  --c-gray-900: #666666;
+  --c-gray-1000: #171717;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,3 +25,11 @@ body {
   align-items: center;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 0.8rem;
+  min-width: 100%;
+}
