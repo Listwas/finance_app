@@ -1,5 +1,6 @@
 import Header from './header/header_buttons.jsx'
 import MainSection from './main_section/MainSection.jsx'
+import Footer from './footer/FooterBlock.jsx'
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
           <h1>balance</h1>
           <Header />
           <MainSection />
+          <Footer />
       </div>
     </>
   )
