@@ -4,8 +4,8 @@
     justify-content: start;
     align-items: start;
     margin-top: 6px;
-    width: 60vw;
-    height: 500px;
+    width: 60vmin;
+    height: auto;
     border: var(--border);
     background-color: var(--c-gray-100);
     border-radius: 12px;
@@ -48,9 +48,9 @@
 }
 
 .chart {
-    width: 35vw;
-    height: 35vw;
-    margin: auto;
+    width: 35vmin;
+    height: 35vmin;
+    margin: 8px auto;
     background: conic-gradient(
         var(--c-pink-700) 0% 21%,        
         transparent 20% 22%, 
