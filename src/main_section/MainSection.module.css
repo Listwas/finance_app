@@ -1,20 +1,22 @@
 .main_cont {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: start;
     align-items: start;
-    margin-top: 16px;
+    margin-top: 6px;
     width: 60vw;
     height: 500px;
     border: var(--border);
+    background-color: var(--c-gray-100);
     border-radius: 12px;
     padding: 0px 6px;
 }
 
 .radio_label {
-    background-color: var(--c-gray-200);
+    background-color: var(--c-gray-500);
     border: none;
     width: 100%;
-    margin: 4px;
+    margin: 6px 4px;
     padding: 3px;
     text-align: center;
     font-size: 1.2rem;
@@ -37,4 +39,45 @@
 
 .radio_input + span {
     transition: padding 0.2s;
+}
+
+.main_cont nav {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.chart {
+    width: 35vw;
+    height: 35vw;
+    margin: auto;
+    background: conic-gradient(
+        var(--c-pink-700) 0% 21%,        
+        transparent 20% 22%, 
+        var(--c-amber-600) 22% 52%,       
+        transparent 52% 53%, 
+        var(--c-green-600) 53% 99%, 
+        transparent 97% 100% 
+      );
+    mask-image: radial-gradient(circle, transparent 60%, red 10px);
+    border-radius: 50%;
+}
+
+.add_button {
+    display: flex;
+    align-self: flex-end;
+    margin: 8px;
+}
+
+.add_button button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    user-select: none;
+    font-size: 48px;
+    font-weight: 300;
+    cursor: pointer;
+    border: var(--border);
+    color:  var(--c-gray-1000);
+    background-color: var(--c-amber-600);
 }
