@@ -1,0 +1,7 @@
+.block {
+    width: 650px;
+    border: var(--border);
+    margin-top: 6px;
+    border-radius: 8px;
+    height: 50px;
+}
